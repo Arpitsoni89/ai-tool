@@ -50,9 +50,9 @@ export const WALKTHROUGH_CHAPTERS: Chapter[] = [
     title: '02. Semantic Ambiguity Modes',
     subtitle: 'Slides 2 & 3: Fragmented Languages & Failures',
     durationSeconds: 12,
-    speechText: 'Notice how three weather tools require different parameters like city, location, or cityName. Without normalization, LLMs hallucinate invalid parameters and crash.',
-    actionHint: 'Simulating agent query routing failure vs ToolNorm rescue',
-    keyHighlight: 'Hallucinated Params • Trigger Collision • Type Drift'
+    speechText: 'Notice how three weather tools require conflicting keys. Check the real-time screen output terminal below to see the exact stdout trace and parameter collision live.',
+    actionHint: 'Live screen output displaying runtime telemetry & parameter collision',
+    keyHighlight: 'Real-Time Screen Out • Parameter Collision • Pydantic Rescue'
   },
   {
     id: 2,

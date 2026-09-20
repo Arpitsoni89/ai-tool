@@ -20,6 +20,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { simulateAgentRouting, RouterSimulationResult } from '../utils/routerSimulator';
+import { RealTimeScreenOutput } from './RealTimeScreenOutput';
 
 export const ProblemExplorer: React.FC = () => {
   const [activeQuery, setActiveQuery] = useState<string>('What is the weather in Jaipur?');
@@ -529,6 +530,17 @@ export const ProblemExplorer: React.FC = () => {
             </div>
 
           </div>
+
+          {/* Real-Time Screen Output Terminal Display (Slide 3) */}
+          <RealTimeScreenOutput
+            query={activeQuery}
+            mode={mode}
+            isSimulating={simulationState === 'running'}
+            simulationStep={simulationStep}
+            simResult={simResult}
+            onToggleMode={(newMode) => runSimulation(newMode)}
+            onTriggerSimulation={() => runSimulation(mode)}
+          />
 
           {/* Collapsible Router Trace Logs */}
           <div className="mt-6 pt-4 border-t border-zinc-800">
