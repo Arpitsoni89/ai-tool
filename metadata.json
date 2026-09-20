@@ -1,0 +1,6 @@
+{
+  "name": "ToolNorm AI",
+  "description": "Standardized canonical tool normalization layer for autonomous AI agents, transforming heterogeneous tool definitions into validated schemas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
